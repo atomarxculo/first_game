@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
             gameObject.GetComponent<Animator>().SetBool("moving", false);
         }
 
-        if (Input.GetKeyDown("up") && canJump){
+        if (Input.GetKeyDown("up") && canJump || Input.GetKeyDown(KeyCode.Space) && canJump){
 
             canJump=false;
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 100f));

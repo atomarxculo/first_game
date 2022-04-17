@@ -11,7 +11,7 @@ public class CoinSpawner : MonoBehaviour
     void Update() {
         timer += Time.deltaTime;
 
-        if (timer >= 2f){
+        if (timer >= 1.5f){
             timer = 0;
             float x = Random.Range(-30f, 30f);
             Vector3 position = new Vector3(x, 0, 0);
